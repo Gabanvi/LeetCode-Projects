@@ -64,7 +64,7 @@ bool fillNum(char **board)
 int main()
 {
 
-    //added this function in main because not needed in the solution for Leetcode
+    //added this function in here because we don't need it in the submission for Leetcode
     void printSolvedBoard(char **board)
     {
         for (int row = 0; row < 9; row++)
