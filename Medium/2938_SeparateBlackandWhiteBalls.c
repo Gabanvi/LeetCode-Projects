@@ -3,7 +3,7 @@
 long long minimumSteps(char *s)
 {
     long long swaps = 0;
-    int black = 0;
+    int black = 0; //counts every black ball encountered
     int i = 0;
 
     while (s[i] != '\0')
@@ -12,6 +12,8 @@ long long minimumSteps(char *s)
         {
             black++;
         }
+       // If we encounter a '0', we add the number of '1's (black) seen so far to swaps
+       // Because each '0' after a '1' will need to "swap places" with all previous '1's
         else if (s[i] == '0')
         {
             swaps += black;
