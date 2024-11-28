@@ -77,7 +77,7 @@ int main() {
         getchar(); // Consume the newline character left by scanf
         scanf("%c", &choice);
 
-        if (choice == 'n' || choice == 'N') //if yes then then loop continues and asks fo rnez number
+        if (choice == 'n' || choice == 'N') //if yes then then loop continues and asks for new number
         {
             printf("Goodbye <3 \n");
             break;
